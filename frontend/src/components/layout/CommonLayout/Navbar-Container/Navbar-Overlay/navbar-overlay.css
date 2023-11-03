@@ -1,0 +1,228 @@
+.navbar {
+    position: relative;
+    z-index: 10;
+}
+
+.nav1,
+.nav2,
+.nav3,
+.nav4 {
+    position: relative;
+    left: -100vw;
+    background: #53DFD1;
+    width: 100vw;
+    height: calc(100vh/4);
+}
+
+.navlist-container {
+    position: relative;
+    transform: translateY(-200%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    /* border: 1px solid green; */
+}
+
+.heading {
+    position: relative;
+    /* border: 1px solid black; */
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.navlist {
+    /* border: 1px solid red; */
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem auto;
+}
+
+.navlink1,
+.navlink2,
+.navlink3,
+.navlink4 {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+    /* border: 1px solid; */
+}
+
+
+/* opening animations  */
+.nav1.opening {
+    animation: openingAnimation 200ms linear both 800ms
+}
+
+.nav2.opening {
+    animation: openingAnimation 200ms linear both 500ms
+}
+
+.nav3.opening {
+    animation: openingAnimation 200ms linear both 200ms
+}
+
+.nav4.opening {
+    animation: openingAnimation 200ms linear both
+}
+
+.heading.openHeading {
+    animation: openHeadingAnimation 1s both 1.8s;
+}
+
+.navlink1.openLink {
+    animation: openNavlink 500ms linear both 1s;
+}
+
+.navlink2.openLink {
+    animation: openNavlink 500ms linear both 1.2s;
+}
+
+.navlink3.openLink {
+    animation: openNavlink 500ms linear both 1.4s;
+}
+
+.navlink4.openLink {
+    animation: openNavlink 500ms linear both 1.6s;
+}
+
+/* closing animations  */
+.nav1.closing {
+    animation: closingAnimation 300ms linear both 1s
+}
+
+.nav2.closing {
+    animation: closingAnimation 300ms linear both 800ms
+}
+
+.nav3.closing {
+    animation: closingAnimation 300ms linear both 600ms
+}
+
+.nav4.closing {
+    animation: closingAnimation 300ms linear both 400ms
+}
+
+.heading.closeHeading {
+    animation: closeHeadingAnimation 1s both;
+}
+
+.navlink1.closeLink {
+    animation: closeNavlink 500ms linear both 100ms;
+}
+
+.navlink2.closeLink {
+    animation: closeNavlink 500ms linear both 200ms;
+}
+
+.navlink3.closeLink {
+    animation: closeNavlink 500ms linear both 300ms;
+}
+
+.navlink4.closeLink {
+    animation: closeNavlink 500ms linear both 400ms;
+}
+
+/* opening and closing animation keyframes  */
+@keyframes openingAnimation {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes closingAnimation {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes openNavlink {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes closeNavlink {
+    from {
+        transform: translateY(100vh);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes openHeadingAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(100vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes closeHeadingAnimation {
+    0% {
+        transform: translateY(100vh);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .navlink1,
+    .navlink2,
+    .navlink3,
+    .navlink4 {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    .heading {
+        font-size: 1.6rem;
+    }
+    .navlist{
+        margin: 1rem 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navlink1,
+    .navlink2,
+    .navlink3,
+    .navlink4 {
+        font-size: 0.8rem;
+        margin: 1rem 0;
+    }
+}

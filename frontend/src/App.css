@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.appContainer{
+    position: relative;
+}
+.active{
+    overflow-y:auto;
+}
+.inactive{
+    overflow-y: hidden;
+}

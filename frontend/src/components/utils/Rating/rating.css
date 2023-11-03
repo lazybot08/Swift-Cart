@@ -1,0 +1,25 @@
+.rating-stars-container{
+    display: flex;
+    position: relative;
+}
+.rating-display{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -5rem;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    background-color: rgb(207, 207, 207);
+    color: black;
+}
+.rating-display::before{
+    content: "";
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(207, 207, 207);
+    z-index: -1;
+    top: 50%;
+    left: -0.6rem;
+    transform: translateY(-50%) rotateZ(-45deg);
+}

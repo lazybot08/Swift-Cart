@@ -1,0 +1,31 @@
+.logout-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.logout-container .error{
+    background-color: rgb(255, 167, 167);
+    color: rgb(255, 96, 96);
+    border: rgb(255, 19, 19);
+}
+.logout-container .logout{
+    background-color: rgb(180, 255, 180);
+    border: 2px solid rgb(89, 255, 89);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.logout-container .logout h1{
+    margin-bottom: 2rem;
+}
+.logout-container .logout button{
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.logout-container .logout button:hover{
+    scale: 1.1;
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SwiftCart API</title>
+</head>
+
+<body>
+    <h1>Swift Cart API Endpoints</h1>
+    <div class="endpoint-container">
+        <div class="authentication-table-container">
+            <h2>User Authentication Endpoints</h2>
+            <table class="authentication-table">
+                <tr>
+                    <th>Endpoint Name</th>
+                    <th>Endpoint path</th>
+                    <th>Description</th>
+                    <th>Authentication</th>
+                    <th>Authorization</th>
+                    <th>Request Method</th>
+                </tr>
+                <tr>
+                    <td>Register User</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/registerUser"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/registerUser</a></td>
+                    <td>To register data in the database.</td>
+                    <td>No</td>
+                    <td>User Route</td>
+                    <td>Post Request Route</td>
+                </tr>
+                <tr>
+                    <td>Login User</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/loginUser"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/loginUser</a></td>
+                    <td>If user is already registered in Database then to login into his account.</td>
+                    <td>No</td>
+                    <td>User Route</td>
+                    <td>Post Request Route</td>
+                </tr>
+                <tr>
+                    <td>Update Password</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/password/updatePassword"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/password/updatePassword</a>
+                    </td>
+                    <td>The user is already logged in and want to update the password</td>
+                    <td>Yes</td>
+                    <td>User Route</td>
+                    <td>Put Request Route</td>
+                </tr>
+                <tr>
+                    <td>Forgot Password</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/password/forgotPassword"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/password/forgotPassword</a>
+                    </td>
+                    <td>The user has forgot the password</td>
+                    <td>No</td>
+                    <td>User Route</td>
+                    <td>Post Request Route</td>
+                </tr>
+                <tr>
+                    <td>Logout User</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/logoutUser"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/logoutUser</a></td>
+                    <td>To Logout the user</td>
+                    <td>No</td>
+                    <td>User Route</td>
+                    <td>Get Request Route</td>
+                </tr>
+            </table>
+        </div>
+        <div class="profile-table-container">
+            <h2>User Profile Endpoints</h2>
+            <table class="profile-table">
+                <tr>
+                    <th>Endpoint Name</th>
+                    <th>Endpoint path</th>
+                    <th>Description</th>
+                    <th>Authentication</th>
+                    <th>Authorization</th>
+                    <th>Request Method</th>
+                </tr>
+                <tr>
+                    <td>Get User Details</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/profile"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/profile</a></td>
+                    <td>To get the user Data once the user has logged in.</td>
+                    <td>Yes</td>
+                    <td>User Route</td>
+                    <td>Post Request Route</td>
+                </tr>
+                <tr>
+                    <td>Upload User Avtar</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/profile/uploadAvatar"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/profile/uploadAvatar</a>
+                    </td>
+                    <td>To upload the user avtar</td>
+                    <td>Yes</td>
+                    <td>User Route</td>
+                    <td>Post Request Route</td>
+                </tr>
+                <tr>
+                    <td>Get Profile Image</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/profile/getProfileImage"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/profile/getProfileImage</a>
+                    </td>
+                    <td>To get the user Avtar</td>
+                    <td>Yes</td>
+                    <td>User Route</td>
+                    <td>Get Request Route</td>
+                </tr>
+                <tr>
+                    <td>Update Profile</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/profile/update"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/profile/update</a>
+                    </td>
+                    <td>The update the user profile details except avtar and password. For that we have different
+                        endpoints</td>
+                    <td>Yes</td>
+                    <td>User Route</td>
+                    <td>Put Request Route</td>
+                </tr>
+            </table>
+        </div>
+        <div class="user-admin-table-container">
+            <h2>User Admin Endpoints</h2>
+            <table class="user-admin-table">
+                <tr>
+                    <th>Endpoint Name</th>
+                    <th>Endpoint path</th>
+                    <th>Description</th>
+                    <th>Authentication</th>
+                    <th>Authorization</th>
+                    <th>Request Method</th>
+                </tr>
+                <tr>
+                    <td>Get All Users</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/admin/users"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/admin/users</a></td>
+                    <td>To get the data of all users</td>
+                    <td>Yes</td>
+                    <td>Admin Route</td>
+                    <td>Get Request Route</td>
+                </tr>
+                <tr>
+                    <td>Get the details of a User</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/admin/users/:id"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/admin/users/:id</a>
+                    </td>
+                    <td>To get the details of a user with the help of his userId</td>
+                    <td>Yes</td>
+                    <td>Admin Route</td>
+                    <td>Get Request Route</td>
+                </tr>
+                <tr>
+                    <td>Update User Role</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/admin/users/update/:id"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/admin/users/update/:id</a>
+                    </td>
+                    <td>To update the user role. There are two roles "user" and "admin". Used for authorization</td>
+                    <td>Yes</td>
+                    <td>Admin Route</td>
+                    <td>Put Request Route</td>
+                </tr>
+                <tr>
+                    <td>Delete User</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/admin/users/delete/:id"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/admin/users/delete/:id</a>
+                    </td>
+                    <td>To delete a user from the database</td>
+                    <td>Yes</td>
+                    <td>Admin Route</td>
+                    <td>Delete Request Route</td>
+                </tr>
+            </table>
+        <div class="products-table-container">
+            <h2>Products Endpoints</h2>
+            <table class="products-table">
+                <tr>
+                    <th>Endpoint Name</th>
+                    <th>Endpoint path</th>
+                    <th>Description</th>
+                    <th>Authentication</th>
+                    <th>Authorization</th>
+                    <th>Request Method</th>
+                </tr>
+                <tr>
+                    <td>Get All Products</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/products"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/products</a></td>
+                    <td>To get all the products. It has query parameters like 'page' for pagination, 'category' for filter, 'keyword' for searching products.</td>
+                    <td>No</td>
+                    <td>User Route</td>
+                    <td>Get Request Route</td>
+                </tr>
+                <tr>
+                    <td>Get Top Deals</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/topDeals"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/topDeals</a>
+                    </td>
+                    <td>To get the top deals on the logic that all the products having discount greater than 15% are top deals.</td>
+                    <td>No</td>
+                    <td>User Route</td>
+                    <td>Get Request Route</td>
+                </tr>
+                <tr>
+                    <td>Get Categories</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/productCategories"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/productCategories</a>
+                    </td>
+                    <td>To get all the categories that are available in the databse.</td>
+                    <td>No</td>
+                    <td>User Route</td>
+                    <td>Get Request Route</td>
+                </tr>
+                <tr>
+                    <td>Get Product Details</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/product/:id"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/product/:id</a>
+                    </td>
+                    <td>To get the details of a product based on productId</td>
+                    <td>No</td>
+                    <td>User Route</td>
+                    <td>Get Request Route</td>
+                </tr>
+                <tr>
+                    <td>Add Product Review</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/product/reviews"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/product/reviews</a>
+                    </td>
+                    <td>To add the review of a product</td>
+                    <td>Yes</td>
+                    <td>User Route</td>
+                    <td>Put Request Route</td>
+                </tr>
+                <tr>
+                    <td>Get All Reviews</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/product/reviews/:id"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/product/reviews/:id</a>
+                    </td>
+                    <td>To get all reviews of a product</td>
+                    <td>Yes</td>
+                    <td>User Route</td>
+                    <td>Get Request Route</td>
+                </tr>
+                <tr>
+                    <td>Delete a Review</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/product/reviews/delete"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/product/reviews/delete</a>
+                    </td>
+                    <td>To delete a review by the user. Only the user who reviewed the productt will be able to delete it.</td>
+                    <td>Yes</td>
+                    <td>User Route</td>
+                    <td>Delete Request Route</td>
+                </tr>
+            </table>
+        </div>
+        <div class="products-admin-table-container">
+            <h2>Products Admin Endpoints</h2>
+            <table class="products-admin-table">
+                <tr>
+                    <th>Endpoint Name</th>
+                    <th>Endpoint path</th>
+                    <th>Description</th>
+                    <th>Authentication</th>
+                    <th>Authorization</th>
+                    <th>Request Method</th>
+                </tr>
+                <tr>
+                    <td>Create a Product</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/admin/product/new"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/admin/product/new</a></td>
+                    <td>To create a product</td>
+                    <td>Yes</td>
+                    <td>Admin Route</td>
+                    <td>Post Request Route</td>
+                </tr>
+                <tr>
+                    <td>Update Product</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/admin/product/:id"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/admin/product/:id</a>
+                    </td>
+                    <td>To update a product as an admin which has been created by that admin user</td>
+                    <td>Yes</td>
+                    <td>Admin Route</td>
+                    <td>Put Request Route</td>
+                </tr>
+                <tr>
+                    <td>Delete a Product</td>
+                    <td><a href="https://e-commerce-backend-y30k.onrender.com/api/v1/admin/product/:id"
+                            target="_blank">https://e-commerce-backend-y30k.onrender.com/api/v1/admin/product/:id</a>
+                    </td>
+                    <td>To delete a product as an admin which has been created by that admin user</td>
+                    <td>Yes</td>
+                    <td>Admin Route</td>
+                    <td>Delete Request Route</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

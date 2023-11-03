@@ -1,0 +1,10 @@
+.header-card{
+    height: calc(100vh - 10rem);
+    /* border: 2px solid green; */
+}
+
+.header-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

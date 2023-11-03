@@ -1,0 +1,12 @@
+.home-content {
+    /* border: 3px solid black; */
+    padding: 1rem;
+}
+
+.shop-by-category {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: grey;
+    /* border: 1px solid; */
+}
+

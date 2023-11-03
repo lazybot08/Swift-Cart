@@ -1,0 +1,122 @@
+.top-deals-card{
+    position: relative;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    cursor: pointer;
+    margin: 1rem;
+}
+.top-deals-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1;
+    transition: scale 0.5s;
+}
+.info{
+    position: absolute;
+    background: #629ade;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    left: 50%;
+    transform: translateX(-50%) translateY(20rem);
+    padding: 1rem;
+    transition: transform 0.5s;
+}
+.top-deals-card:hover .info{
+    left: 50%;
+    transform: translateX(-50%) translateY(10rem);
+}
+.top-deals-card:hover img{
+    scale: 0.9;
+}
+.info .name{
+    display: block;
+    /* border: 1px solid red; */
+}
+.info .price{
+    text-decoration: line-through;
+    margin-right: 0.4rem;
+}
+.info .discount{
+    font-size: 0.8rem;
+}
+.info .rating{
+    width: 6rem;
+}
+@media screen and (max-width: 768px) {
+    .info{
+        font-size: 0.8rem;
+        padding: 0.8rem;
+        text-align: center;
+    }
+    .info .rating{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 550px) {
+    .top-deals-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-deals-card img{
+        width: 100%;
+        height: 0;
+        flex: 0 0 60%;
+        object-fit: cover;
+        transition: none;
+    }
+    .top-deals-card:hover .info{
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+    }
+    .top-deals-card:hover img{
+        scale: 1;
+    }
+    .info{
+        flex: 0 1 40%;
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        transition: none;
+        transform: translateX(-50%) translateY(0);
+    }
+    .info .name{
+        justify-self: center;
+        align-self: center;
+        flex: 1 1 100%;
+        padding: 0;
+        margin: 0.2rem 0;
+    }
+    .info .price{
+        width: 6rem;
+        flex: 0 1 50%;
+        align-self: center;
+        margin: 0.2rem auto;
+        text-align: right;
+    }
+    .info .discount{
+        width: 8rem;
+        flex: 1 1 0;
+        align-self: center;
+        margin: 0.2rem auto;
+        padding: 0 0.2rem;
+        font-size: 0.6rem;
+        text-align: left;
+    }
+    .info .current-price{
+        flex: 1 1 100%;
+    }
+    .info .rating{
+        width: 4rem;
+        flex-grow: 0;
+        flex-shrink: 1;
+        align-self: center;
+        margin: 0.2rem auto;
+    }
+}

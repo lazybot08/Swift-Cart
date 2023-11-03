@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body>h1 {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.authentication-table-container h2,
+.profile-table-container h2,
+.user-admin-table-container h2,
+.products-table-container h2,
+.products-admin-table-container h2{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.authentication-table,
+.profile-table,
+.user-admin-table,
+.products-table,
+.products-admin-table {
+    border: 1px solid;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.authentication-table tr,
+.profile-table tr,
+.user-admin-table tr,
+.products-table tr,
+.products-admin-table tr {
+    background-color: rgb(200, 200, 200);
+}
+
+.authentication-table th,
+.profile-table th,
+.user-admin-table th,
+.products-table th,
+.products-admin-table th {
+    border: 1px solid;
+    padding: 1rem 0;
+}
+
+.authentication-table td,
+.profile-table td,
+.user-admin-table td,
+.products-table td,
+.products-admin-table td {
+    padding: 1rem 0.4rem;
+    word-wrap: break-word;
+    border: 1px solid;
+}
