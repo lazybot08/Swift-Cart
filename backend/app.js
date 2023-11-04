@@ -10,7 +10,7 @@ const orderRouter = require('./routes/orderRoute')
 
 //Now for allowing cross origin requests we need cors module
 app.use(cors({
-    origin: "https://e-commerce-frontend-yinf.onrender.com",
+    origin: "https://e-commerce-frontend-bsic.onrender.com",
     credentials: true
 }))
 app.use(express.json({limit: '50mb'}))                                //It is an inbuilt middleware to parse the request JSON payloads. It is being used as a global middleware because it will mount on every path
