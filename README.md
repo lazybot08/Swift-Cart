@@ -10,7 +10,7 @@ The frontend is deployed using the render.com service as a static website.
 
 Demo Link : https://e-commerce-frontend-yinf.onrender.com
 
-Source Code : https://github.com/YashSharma2000/SwiftCart/tree/master/frontend
+Source Code : https://github.com/lazybot08/Swift-Cart/tree/main/frontend
 ## Backend Deployment & Source Code
 The backend is also deployed using render.com as a web service but on a different domain than the frontend domain. So for cross origin data sharing I have used cors middleware in expressJS. 
 
@@ -20,4 +20,4 @@ Now I have sent JWT token as httpOnly cookie so to ensure that the browser recei
 
 Deployment Link : https://e-commerce-backend-y30k.onrender.com
 
-Source-Code : https://github.com/YashSharma2000/SwiftCart/tree/master/backend
+Source-Code : https://github.com/lazybot08/Swift-Cart/tree/main/backend
