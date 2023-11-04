@@ -14,7 +14,7 @@ function ForgotPassword() {
             forgotPasswordDispatch({
                 type: 'FORGOT_PASSWORD_START'
             })
-            const fetchedForgotPassword = await fetch(`${MODE === 'DEVELOPMENT' ?'http://localhost:4000':'https://e-commerce-backend-y30k.onrender.com'}/api/v1/password/forgotPassword`, {
+            const fetchedForgotPassword = await fetch(`${MODE === 'DEVELOPMENT' ?'http://localhost:4000':'https://swiftcart-backend.onrender.com'}/api/v1/password/forgotPassword`, {
                 method: 'POST',
                 body: JSON.stringify({
                     email: emailRef.current.value

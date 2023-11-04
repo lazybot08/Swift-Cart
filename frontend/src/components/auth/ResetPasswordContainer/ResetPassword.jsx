@@ -16,7 +16,7 @@ function ResetPassword() {
             resetPasswordDispatch({
                 type: 'RESET_PASSWORD_START'
             })
-            const fetchedResetUser = await fetch(`${MODE === 'DEVELOPMENT' ?'http://localhost:4000':'https://e-commerce-backend-y30k.onrender.com'}/api/v1/password/resetPassword/${params.token}`, {
+            const fetchedResetUser = await fetch(`${MODE === 'DEVELOPMENT' ?'http://localhost:4000':'https://swiftcart-backend.onrender.com'}/api/v1/password/resetPassword/${params.token}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'

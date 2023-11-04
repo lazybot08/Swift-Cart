@@ -12,7 +12,7 @@ export default function Login() {
         e.preventDefault()
         loginDispatch({ type: 'LOGIN_START' })
         try {
-            const rawUserData = await fetch(`${MODE === 'DEVELOPMENT' ?'http://localhost:4000':'https://e-commerce-backend-y30k.onrender.com'}/api/v1/loginUser`, {
+            const rawUserData = await fetch(`${MODE === 'DEVELOPMENT' ?'http://localhost:4000':'https://swiftcart-backend.onrender.com'}/api/v1/loginUser`, {
                 method: 'POST',
                 body: JSON.stringify({
                     email: emailRef.current.value,

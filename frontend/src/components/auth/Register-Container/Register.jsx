@@ -13,7 +13,7 @@ export default function Register() {
         e.preventDefault()
         registerDispatch({type: 'REGISTER_START'})
         try{
-            const registeredUser = await fetch(`${MODE === 'DEVELOPMENT' ?'http://localhost:4000':'https://e-commerce-backend-y30k.onrender.com'}/api/v1/registerUser`, {
+            const registeredUser = await fetch(`${MODE === 'DEVELOPMENT' ?'http://localhost:4000':'https://swiftcart-backend.onrender.com'}/api/v1/registerUser`, {
                 method: 'POST',
                 body: JSON.stringify({
                     name: nameRef.current.value,
